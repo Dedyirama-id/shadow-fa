@@ -6,8 +6,8 @@ const options = {};
 
 module.exports = {
   entry: {
-    main: './index.js',
-    fa: './style.js',
+    main: './src/index.js',
+    fa: './src/style.js',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -25,7 +25,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './index.html',
+      template: './src/index.html',
       filename: 'index.html',
     }),
     new MiniCssExtractPlugin({
